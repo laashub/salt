@@ -658,7 +658,7 @@ def salt_factories_config():
         "code_dir": CODE_DIR,
         "inject_coverage": MAYBE_RUN_COVERAGE,
         "inject_sitecustomize": MAYBE_RUN_COVERAGE,
-        "start_timeout": 120 if (os.environ.get('JENKINS_URL') or os.environ.get('CI')) else 30
+        "start_timeout": 120 if (os.environ.get('JENKINS_URL') or os.environ.get('CI')) else 60
     }
 
 
